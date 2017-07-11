@@ -100,11 +100,15 @@ a{
   background-color: white;
   box-shadow: rgba(0,0,0,0.4) 1px 0px 6px;
   z-index: 1;
+  top:0;
+  position: fixed;
+}
+
+.header-fixed-content{
   height: 129px;
   padding-top: 18px;
-  top:0;
+
   margin-top: 0;
-  position: fixed;
 }
 
 
@@ -332,8 +336,13 @@ input[type=submit]:hover{
 }
 
 /*footer*/
-.site-footer{
+.container-footer{
+  width: 100%;
+  margin: 0 auto;
   background-color: #242424;
+}
+
+.site-footer{
   color: white;
   padding: 50px 0;
   margin-top: 7px;
@@ -467,7 +476,7 @@ input[type=submit]:hover{
   }
 
   /*tablet - footer style*/
-  .site-footer-tablet{
+  .site-footer{
     display: flex;
     flex-wrap: nowrap;
     padding-left: 3%;
@@ -516,5 +525,10 @@ input[type=submit]:hover{
 
 /*desktop view*/
 @media screen and (min-width: 1240px) {
-  
+  .site-footer{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 3%;
+  }
 }
