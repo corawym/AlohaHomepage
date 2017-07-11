@@ -111,7 +111,6 @@ a{
   margin-top: 0;
 }
 
-
 .header-logo{
   flex-basis: 50%;
 }
@@ -202,13 +201,9 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  /*height: 300px;*/
   border-top: solid 4px white;
   border-bottom: solid 4px white;
-  /*padding-bottom: 50%;*/
 }
-
-
 
 .shop-text{
   font-family: 'Raleway-web', sans-serif;
@@ -247,8 +242,6 @@ a{
 .glasses, .bags{
   border-left: solid 4px white;
 }
-
-
 
 .mens{
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/mens-category.jpg") no-repeat center;
@@ -517,8 +510,6 @@ input[type=submit]:hover{
     display: block;
     margin: 0;
   }
-
-
 
   .footer-social-media-content li{
     display: block;
