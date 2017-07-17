@@ -5,6 +5,7 @@ $(document).ready(function(){
     draggable: true,
     initialIndex: 0,
     wraparound: false,
+    autoPlay: true
   });
 
 
