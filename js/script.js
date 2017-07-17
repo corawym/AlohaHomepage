@@ -23,7 +23,7 @@ $(document).ready(function(){
     $("html,body,article").animate({scrollTop:$(this.hash).offset().top-offset}, 500);
   });
   
-  // updates style
+  // updates style - email validation
   $("#btn-sub").on("click", function(event) {
     if (ValidateEmail($("#email-input").val())) {
       event.preventDefault();
