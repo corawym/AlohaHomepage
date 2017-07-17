@@ -4,14 +4,12 @@
   width: 100%;
   margin: 0 auto;
 }
-
 .container-maxwidth{
   width: 100%;
   margin: 0 auto;
   max-width: 600px;
   padding: 3%;
 }
-
 *{
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -21,65 +19,52 @@
 html{
   font-size: 14px;
 }
-
 body{
   font-family: 'Raleway-web', sans-serif;
   color: #2d2d2d;
 }
-
 h1, h2, h3{
   font-family: 'PlayfairDisplay-web', serif;
 }
-
 p{
   font-weight: 300;
   font-style: normal;
 }
-
 h1{
   font-size: 3rem;
 }
-
 h2{
   font-size: 2.3rem;
   font-weight: 300;
   font-style: italic;
   text-align: center;
 }
-
 h3{
   font-size: 1.5rem;
   font-weight: 400;
   font-style: normal;
   color: #e2574c;
 }
-
 .heavy{
   font-weight: 700;
   font-style: normal;
 }
-
 .shadow{
   text-shadow: rgba(0,0,0,0.6) 1px 1px 6px;
 }
-
 ul{
   list-style-type: none;
 }
-
 a{
   text-decoration: none;
 }
-
 .text-white-center{
   color:white;
   text-align: center;
 }
-
 .screen-reader{
   display: none;
 }
-
 .content-center{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,7 +73,6 @@ a{
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .description{
   font-size: 1.2rem;
   line-height: 1.9rem;
@@ -106,23 +90,18 @@ a{
   position: fixed;
   height: 129px;
 }
-
 .header-fixed-content{
   padding-top: 18px;
-
   margin-top: 0;
 }
-
 .header-logo{
   flex-basis: 50%;
 }
-
 .header-cart{
   flex-basis: 50%;
   display: flex;
   justify-content: flex-end;
 }
-
 .main-nav{
   flex-basis: 100%;
   border-top: solid 0.5px #d7d7d7;
@@ -366,7 +345,7 @@ a{
   margin: 0 auto;
   width: 85%;
   height: 50px;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -377,6 +356,7 @@ input[type=email]{
   margin-left: 20px;
   width:70%;
   border: none;
+  outline: none;
 }
 
 input[type=submit]{
