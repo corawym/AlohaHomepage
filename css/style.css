@@ -333,6 +333,9 @@ a{
 
 /*mobile - updates style*/
 .updates{
+  background: -webkit-gradient( linear,left top, left bottom,from(rgba(0, 0, 0, 0.3)),to(rgba(0, 0, 0, 0.3))), url("../images/wave-bkgd.jpg") no-repeat center bottom;
+  background: -webkit-linear-gradient( rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/wave-bkgd.jpg") no-repeat center bottom;
+  background: -o-linear-gradient( rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/wave-bkgd.jpg") no-repeat center bottom;
   background: linear-gradient( rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/wave-bkgd.jpg") no-repeat center bottom;
   background-size: cover, 200%;
   height: 340px;
@@ -353,7 +356,11 @@ a{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 input[type=email]{
@@ -417,6 +424,8 @@ input[type=submit]:hover{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .footer-social-media-content li{
@@ -449,19 +458,31 @@ input[type=submit]:hover{
     height: 88px;
   }
   header .content-center{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
   .header-logo{
+    -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
   .header-cart{
+    -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
     order: 3;
   }
   .main-nav{
+    -ms-flex-preferred-size: 60%;
     flex-basis: 60%;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
     border: none;
   }
@@ -482,9 +503,11 @@ input[type=submit]:hover{
 
   /*tablet - shop style*/
   .shop-wide{
+    -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
   }
   .shop-square{
+    -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
   }
   .mens, .bags{
@@ -517,13 +540,17 @@ input[type=submit]:hover{
     padding-right: 3%;
   }
   .footer-contact{
+    -ms-flex-preferred-size: 80%;
     flex-basis: 80%;
   }
   .footer-social-media{
+    -ms-flex-preferred-size: 20%;
     flex-basis: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
   }
   .footer-contact p{
