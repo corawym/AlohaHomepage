@@ -63,7 +63,6 @@ h3{
   text-shadow: rgba(0,0,0,0.6) 1px 1px 6px;
 }
 
-
 ul{
   list-style-type: none;
 }
@@ -159,13 +158,13 @@ a{
   color: #b64036;
 } 
 
-/*article style*/
+/*mobile - article style*/
 .main-content{
   top: 129px;
   margin-top: 129px;
 }
 
-/*top banner style*/
+/*mobile - top banner style*/
 .top-banner{
   height: 400px;
   background: linear-gradient( rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("../images/banner-girl.png")no-repeat bottom, url("../images/flower-bkgd.jpg")no-repeat center;
@@ -187,13 +186,13 @@ a{
   margin: 15px 0 0 0;
 }
 
-/*about style*/
+/*mobile - about style*/
 .about{
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-/*shop style*/
+/*mobile - shop style*/
 .shop-wide{
   flex-basis: 100%;
 }
@@ -280,7 +279,7 @@ a{
 
 
 
-/*featured style*/
+/*mobile - featured style*/
 .shop{
   margin-bottom: 10%;
 }
@@ -323,7 +322,7 @@ a{
   background-color: #0f87a2;
 }
 
-/*carousel*/
+/*mobile - carousel style*/
 .carousel {
   background: white;
   padding-bottom: 5%;
@@ -346,7 +345,7 @@ a{
 
 
 
-/*updates style*/
+/*mobile - updates style*/
 .updates{
   background: linear-gradient( rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("../images/wave-bkgd.jpg") no-repeat center bottom;
   background-size: cover, 200%;
@@ -394,7 +393,7 @@ input[type=submit]:hover{
   background-color: #b64036;
 }
 
-/*footer*/
+/*mobile - footer style*/
 .container-footer{
   width: 100%;
   margin: 0 auto;
@@ -516,7 +515,7 @@ input[type=submit]:hover{
     font-size: 3rem;
   }
 
-  /*tablet - shop*/
+  /*tablet - shop style*/
   .shop-wide{
     flex-basis: 50%;
   }
@@ -596,7 +595,7 @@ input[type=submit]:hover{
 
 /*desktop view*/
 @media screen and (min-width: 1240px) {
-  /*desktop - top banner*/
+  /*desktop - top banner style*/
   .top-banner{
     height: 550px;
   }
@@ -619,7 +618,7 @@ input[type=submit]:hover{
     width: 25%;
   }
 
-  /*desktop - footer*/
+  /*desktop - footer style*/
   .site-footer{
     width: 100%;
     margin: 0 auto;
