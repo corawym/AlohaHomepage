@@ -13,6 +13,7 @@
 }
 
 *{
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -104,10 +105,10 @@ a{
   z-index: 1;
   top:0;
   position: fixed;
+  height: 129px;
 }
 
 .header-fixed-content{
-  height: 129px;
   padding-top: 18px;
 
   margin-top: 0;
