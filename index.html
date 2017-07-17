@@ -8,8 +8,10 @@
     <title>Aloha Apparel Co.</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://use.fontawesome.com/1437fadb56.js"></script>
+    
   </head>
 
   <body>
@@ -42,137 +44,151 @@
       </div>
     </header>
 
-    <!--Below is the section for top banner.-->
-    <section class="container banner-margin-top">
-      <div class="content-center top-banner">
-        <div class="shadow text-white-center">
-          <p class="banner-subtitle">new collection</p>
-          <p class="banner-title">Spring/Summer 2017</p>
-        </div>
-    </section>
-
-    <!--Below is the section for about.-->
-    <section class="container-maxwidth" id="about">
-      <div class="about content-tablet">
-        <h2>Hand-Crafted <span class="heavy">Styles</span></h2>
-        <p class="description">Aloha Apparel Co. sells only the finest ready-to-travel clothing. 
-        Browse our current selection of products or sign-up for updates below.</p>
-      </div>
-    </section>
-
-    <!--Below is the section for shop, product categories.-->
-    <section class="container" id="shop">
-      <div class="content-center">
-
-        <div class="shop-wide">
-          <div class="category mens">
-            <a class="shop-text shadow" href="#">men's</a> 
+    <!--Below is the main content for the site.-->
+    <article class="main-content">
+      <!--Below is the section for top banner.-->
+      <section class="container">
+        <div class="content-center top-banner">
+          <div class="shadow text-white-center">
+            <p class="banner-subtitle">new collection</p>
+            <p class="banner-title">Spring/Summer 2017</p>
           </div>
-        </div>
+      </section>
 
-        <div class="shop-square">
-          <div class="category trends">
-            <a class="shop-text shadow" href="#">trends</a>
+      <!--Below is the section for about.-->
+      <section class="container-maxwidth" id="about">
+        <div class="about content-tablet">
+          <h2>Hand-Crafted <span class="heavy">Styles</span></h2>
+          <p class="description">Aloha Apparel Co. sells only the finest ready-to-travel clothing. 
+          Browse our current selection of products or sign-up for updates below.</p>
+        </div>
+      </section>
+
+      <!--Below is the section for shop, product categories.-->
+      <section class="container" id="shop">
+        <div class="content-center">
+
+          <div class="shop-wide">
+            <div class="category mens">
+              <a class="shop-text shadow" href="#">men's</a> 
+            </div>
           </div>
-        </div>
 
-        <div class="shop-square">
-          <div class="category glasses">
-            <a class="shop-text shadow" href="#">glasses</a>
+          <div class="shop-square">
+            <div class="category trends">
+              <a class="shop-text shadow" href="#">trends</a>
+            </div>
           </div>
-        </div>
 
-        <div class="shop-square">
-          <div class="category sale">
-            <a class="shop-text shadow" href="#">sale</a>
+          <div class="shop-square">
+            <div class="category glasses">
+              <a class="shop-text shadow" href="#">glasses</a>
+            </div>
           </div>
-        </div>
 
-        <div class="shop-square">
-          <div class="category bags">
-            <a class="shop-text shadow" href="#">bags</a>
+          <div class="shop-square">
+            <div class="category sale">
+              <a class="shop-text shadow" href="#">sale</a>
+            </div>
           </div>
-        </div>
 
-        <div class="shop-wide">
-          <div class="category womens">
-            <a class="shop-text shadow" href="#">women's</a>
+          <div class="shop-square">
+            <div class="category bags">
+              <a class="shop-text shadow" href="#">bags</a>
+            </div>
           </div>
+
+          <div class="shop-wide">
+            <div class="category womens">
+              <a class="shop-text shadow" href="#">women's</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!--Below is the section for featured products.-->
+      <section class="container-maxwidth shop" id="featured">
+        <div class="featured">
+          <h2 >Most-Loved <span class="heavy">Products</span></h2>
+          <div class="carousel">
+            <div class="carousel-cell">
+              <img src="images/stretch-knit-dress.jpg" alt="a picture of a stretch knit dress">
+              <p class="featured-category">Dresses</p>
+              <h3>Stretch Knit Dress</h3>
+              <p class="featured-price">$169</p>
+              <button class="btn-addtocart" name="button">Add to Cart</button>
+            </div>
+            <div class="carousel-cell">
+              <img src="images/cotton-blue-shirt.jpg" alt="a picture of a cotton blue shirt">
+              <p class="featured-category">Shirts</p>
+              <h3>Cotton Blue Shirt</h3>
+              <p class="featured-price">$89</p>
+              <button class="btn-addtocart" name="button">Add to Cart</button>
+            </div>
+            <div class="carousel-cell">
+              <img src="images/checked-stretch-dress.jpg" alt="a picture of a checked stretch dress">
+              <p class="featured-category">Dresses</p>
+              <h3>Checked Stretch Dress</h3>
+              <p class="featured-price">$129</p>
+              <button class="btn-addtocart" name="button">Add to Cart</button>
+            </div>
+            <div class="carousel-cell">
+              <img src="images/blue-hipster-backpack.jpg" alt="a picture of a blue hipster backpack">
+              <p class="featured-category">Bags</p>
+              <h3>Blue Hipster Backpack</h3>
+              <p class="featured-price">$69</p>
+              <button class="btn-addtocart" name="button">Add to Cart</button>
+            </div>
+            <div class="carousel-cell">
+              <img src="images/demin-overall-shorts.jpg" alt="a picture of a demin overall shorts">
+              <p class="featured-category">Denim</p>
+              <h3>Demin Overall Shorts</h3>
+              <p class="featured-price">$89</p>
+              <button class="btn-addtocart" name="button">Add to Cart</button>
+            </div>
+            <div class="carousel-cell">
+              <img src="images/pink-dotted-dress.jpg" alt="a picture of a pink dotted dress">
+              <p class="featured-category">Dresses</p>
+              <h3>Pink Dotted Dress</h3>
+              <p class="featured-price">$99</p>
+              <button class="btn-addtocart" name="button">Add to Cart</button>
+            </div>
+            <div class="carousel-cell">
+              <img src="images/blue-silk-dress.jpg" alt="a picture of a blue silk dress">
+              <p class="featured-category">Dresses</p>
+              <h3>Blue Silk Dress</h3>
+              <p class="featured-price">$119</p>
+              <button class="btn-addtocart" name="button">Add to Cart</button>
+            </div>
+            <div class="carousel-cell">
+              <img src="images/cotton-yellow-tshirt.jpg" alt="a picture of a cotton yellow tshirt">
+              <p class="featured-category">Shirts</p>
+              <h3>Cotton Yellow Tshirt</h3>
+              <p class="featured-price">$39</p>
+              <button class="btn-addtocart" name="button">Add to Cart</button>
+            </div>
+          </div>
+
         </div>
 
-      </div>
-    </section>
-
-    <!--Below is the section for featured products.-->
-    <section class="container-maxwidth" id="featured">
-      <div class="featured">
-        <h2 >Most-Loved <span class="heavy">Products</span></h2>
-        <div>
-          <img src="images/stretch-knit-dress.jpg" alt="a picture of a stretch knit dress">
-          <p class="featured-category">Dresses</p>
-          <h3>Stretch Knit Dress</h3>
-          <p class="featured-price">$169</p>
-        </div>
-        <div>
-          <img src="images/cotton-blue-shirt.jpg" alt="a picture of a cotton blue shirt">
-          <p class="featured-category">Shirts</p>
-          <h3>Cotton Blue Shirt</h3>
-          <p class="featured-price">$89</p>
-        </div>
-        <div>
-          <img src="images/checked-stretch-dress.jpg" alt="a picture of a checked stretch dress">
-          <p class="featured-category">Dresses</p>
-          <h3>Checked Stretch Dress</h3>
-          <p class="featured-price">$129</p>
-        </div>
-        <div>
-          <img src="images/blue-hipster-backpack.jpg" alt="a picture of a blue hipster backpack">
-          <p class="featured-category">Bags</p>
-          <h3>Blue Hipster Backpack</h3>
-          <p class="featured-price">$69</p>
-        </div>
-        <div>
-          <img src="images/demin-overall-shorts.jpg" alt="a picture of a demin overall shorts">
-          <p class="featured-category">Denim</p>
-          <h3>Demin Overall Shorts</h3>
-          <p class="featured-price">$89</p>
-        </div>
-        <div>
-          <img src="images/pink-dotted-dress.jpg" alt="a picture of a pink dotted dress">
-          <p class="featured-category">Dresses</p>
-          <h3>Pink Dotted Dress</h3>
-          <p class="featured-price">$99</p>
-        </div>
-        <div>
-          <img src="images/blue-silk-dress.jpg" alt="a picture of a blue silk dress">
-          <p class="featured-category">Dresses</p>
-          <h3>Blue Silk Dress</h3>
-          <p class="featured-price">$119</p>
-        </div>
-        <div>
-          <img src="images/cotton-yellow-tshirt.jpg" alt="a picture of a cotton yellow tshirt">
-          <p class="featured-category">Shirts</p>
-          <h3>Cotton Yellow Tshirt</h3>
-          <p class="featured-price">$39</p>
-        </div>
-      </div>
-
-    </section>
-    
-    <!--Below is the section for updates, where users can subscribe-->
-    <section class="container" id="updates">
-      <div class="content-center updates">
-        <div class="text-white-center content-tablet">
-          <h2 class="shadow">Sign-up for <span class="heavy">Updates</span></h2>
-          <p class="description">Stay updated on our latest product releases, be first to find out about 
-          upcoming sales, and get free style tips from our blog. 
-          Unsubscribe at any time.</p>
-          <form class="updates-form">
-            <input type="email" name="email-address" placeholder="Your Email" required>
-            <input class="text-white-center" type="submit" name="subscribe" value="Subscribe">
-          </form>
-        </div>
-    </section>
+      </section>
+      
+      <!--Below is the section for updates, where users can subscribe-->
+      <section class="container" id="updates">
+        <div class="content-center updates">
+          <div class="text-white-center content-tablet">
+            <h2 class="shadow">Sign-up for <span class="heavy">Updates</span></h2>
+            <p class="description">Stay updated on our latest product releases, be first to find out about 
+            upcoming sales, and get free style tips from our blog. 
+            Unsubscribe at any time.</p>
+            <form class="updates-form">
+              <input type="email" name="email-address" placeholder="Your Email" required>
+              <input class="text-white-center" type="submit" name="subscribe" value="Subscribe">
+            </form>
+          </div>
+      </section>
+    </article>
 
     <!--Below is the footer for company contact information-->
     <footer class="container-footer">
@@ -230,7 +246,14 @@
       </div>
     </footer>
 
-
+    <!--JavaScript files-->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src='js/script.js'></script>
+    
   </body>
 </html>
 

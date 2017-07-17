@@ -156,11 +156,13 @@ a{
   color: #b64036;
 } 
 
-/*top banner style*/
-.banner-margin-top{
+/*article style*/
+.main-content{
+  top: 129px;
   margin-top: 129px;
 }
 
+/*top banner style*/
 .top-banner{
   height: 400px;
   background: linear-gradient( rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("../images/banner-girl.png")no-repeat bottom, url("../images/flower-bkgd.jpg")no-repeat center;
@@ -276,12 +278,12 @@ a{
 
 
 /*featured style*/
-.featured{
-  text-align: center;
+.shop{
+  margin-bottom: 10%;
 }
 
-.featured img{
-  width: 100%;
+.featured{
+  text-align: center;
 }
 
 .featured h3{
@@ -299,6 +301,42 @@ a{
 .featured-price{
   font-weight: 600;
 }
+
+.btn-addtocart{
+  font-family: 'Raleway-web', sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 4px 18px;
+  border: none;
+  border-radius: 28px;
+  height: 28px;
+  margin-top: 3%;
+}
+
+.btn-addtocart:hover{
+  background-color: #0f87a2;
+}
+
+/*carousel*/
+.carousel {
+  background: white;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: auto;
+  margin: 2%;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell img{
+  width: 60%;
+}
+
+
 
 /*updates style*/
 .updates{
@@ -458,11 +496,14 @@ input[type=submit]:hover{
     margin: 0 2.5%;
   }
   
-  /*tablet - top banner*/
-  .banner-margin-top{
+  
+  /*article style*/
+  .main-content{
+    margin-top: 88px;
     margin-top: 88px;
   }
 
+  /*tablet - top banner style*/
   .banner-title{
     font-size: 3rem;
   }
@@ -482,6 +523,17 @@ input[type=submit]:hover{
 
   .trends, .womens{
     border-left: solid 4px white;
+  }
+
+  /*tablet - featured style*/
+  .btn-addtocart{
+    padding: 5px 20px;
+    border-radius: 35px;
+    height: 35px;
+  }
+
+  .carousel-cell {
+    width: 50%;
   }
 
   /*tablet - footer style*/
@@ -532,6 +584,20 @@ input[type=submit]:hover{
 
 /*desktop view*/
 @media screen and (min-width: 1240px) {
+  /*desktop - top banner*/
+  .top-banner{
+    height: 550px;
+  }
+
+  .top-banner{
+    background-size: cover, 210px, cover;
+  }
+
+  .carousel-cell {
+    width: 25%;
+  }
+
+/*desktop - footer*/
   .site-footer{
     width: 100%;
     margin: 0 auto;
