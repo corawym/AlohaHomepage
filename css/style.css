@@ -69,8 +69,13 @@ a{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .description{
@@ -84,6 +89,7 @@ a{
 /*mobile - header style*/
 .header-fixed{
   background-color: white;
+  -webkit-box-shadow: rgba(0,0,0,0.4) 1px 0px 6px;
   box-shadow: rgba(0,0,0,0.4) 1px 0px 6px;
   z-index: 1;
   top: 0;
@@ -95,14 +101,21 @@ a{
   margin-top: 0;
 }
 .header-logo{
+  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
 }
 .header-cart{
+  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 .main-nav{
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   border-top: solid 0.5px #d7d7d7;
   margin-top: 8px;
@@ -140,6 +153,9 @@ a{
 /*mobile - top banner style*/
 .top-banner{
   height: 400px;
+  background: -webkit-gradient( linear,left top, left bottom,from(rgba(0, 0, 0, 0.3)),to(rgba(0, 0, 0, 0.3))),url("../images/banner-girl.png")no-repeat bottom, url("../images/flower-bkgd.jpg")no-repeat center;
+  background: -webkit-linear-gradient( rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("../images/banner-girl.png")no-repeat bottom, url("../images/flower-bkgd.jpg")no-repeat center;
+  background: -o-linear-gradient( rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("../images/banner-girl.png")no-repeat bottom, url("../images/flower-bkgd.jpg")no-repeat center;
   background: linear-gradient( rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("../images/banner-girl.png")no-repeat bottom, url("../images/flower-bkgd.jpg")no-repeat center;
   background-size: cover, 150px, cover;
 }
@@ -165,14 +181,22 @@ a{
 
 /*mobile - shop style*/
 .shop-wide{
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
 }
 .shop-square{
+  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
 }
 .shop-wide, .shop-square{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border-top: solid 4px white;
   border-bottom: solid 4px white;
@@ -187,6 +211,8 @@ a{
   position: absolute;
   top: 50%;
   right: 50%;
+  -webkit-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
   transform: translate(50%, -50%);
 }
 .shop-text:hover{
@@ -196,10 +222,10 @@ a{
   width: 100%;
   position: relative;
 }
-.mens, .womens{
+.mens > div, .womens > div{
   padding-top: 50%;
 }
-.trends, .glasses, .sale, .bags{
+.trends > div, .glasses > div, .sale > div, .bags > div{
   padding-top: 100%;
 }
 .trends, .sale{
@@ -209,26 +235,44 @@ a{
   border-left: solid 4px white;
 }
 .mens{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/mens-category.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/mens-category.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/mens-category.jpg") no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/mens-category.jpg") no-repeat center;
   background-size: cover, cover;
 }
 .trends{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/trends-category.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/trends-category.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/trends-category.jpg") no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/trends-category.jpg") no-repeat center;
   background-size: cover, cover;
 }
 .glasses{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/glasses-category.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/glasses-category.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/glasses-category.jpg") no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/glasses-category.jpg") no-repeat center;
   background-size: cover, cover;
 }
 .sale{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/sale-category.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/sale-category.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/sale-category.jpg") no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/sale-category.jpg") no-repeat center;
   background-size: cover, cover;
 }
 .bags{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/bags-category.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/bags-category.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/bags-category.jpg") no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/bags-category.jpg") no-repeat center;
   background-size: cover, cover;
 }
 .womens{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../images/womens-category.jpg") no-repeat center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/womens-category.jpg") no-repeat center;
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/womens-category.jpg") no-repeat center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/womens-category.jpg") no-repeat center;
   background-size: cover, cover;
 }
@@ -306,6 +350,8 @@ a{
   margin: 0 auto;
   width: 85%;
   height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -368,6 +414,8 @@ input[type=submit]:hover{
 .footer-social-media-content{
   padding: 0;
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   justify-content: center;
 }
@@ -461,6 +509,8 @@ input[type=submit]:hover{
 
   /*tablet - footer style*/
   .site-footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: nowrap;
     padding-left: 3%;
@@ -471,6 +521,8 @@ input[type=submit]:hover{
   }
   .footer-social-media{
     flex-basis: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: flex-end;
   }

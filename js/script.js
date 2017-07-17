@@ -40,4 +40,4 @@ function ValidateEmail(mail){
   }else{
     return (false);
   }
-}
+}; 
