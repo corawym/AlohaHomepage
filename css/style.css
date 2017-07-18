@@ -325,7 +325,7 @@ a{
 .carousel-cell {
   width: 100%;
   height: auto;
-  border: 2% solid white;
+  border: 4px solid white;
   counter-increment: carousel-cell;
 }
 .carousel-cell img{
@@ -574,6 +574,7 @@ input[type=submit]:hover{
   .social-media-text{
     display: inline-block;
   }
+}
 
 /*desktop view*/
 @media screen and (min-width: 1240px) {
