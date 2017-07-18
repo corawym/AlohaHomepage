@@ -11,19 +11,17 @@ $(document).ready(function(){
     contain: true
   });
 
-  // header style - smooth scrolling
+  // header - smooth scrolling
   var offset = $(".header-fixed").height();
-
   $(window).resize(function() {
     offset = $(".header-fixed").height();
   });
-
   $(".main-nav a[href*=\\#]").on("click", function(event){  
     event.preventDefault();
     $("html,body,article").animate({scrollTop:$(this.hash).offset().top-offset}, 500);
   });
   
-  // updates style - email validation
+  // updates - email validation
   $("#btn-sub").on("click", function(event) {
     if (ValidateEmail($("#email-input").val())) {
       event.preventDefault();
@@ -32,11 +30,9 @@ $(document).ready(function(){
     } 
   });
 
-  // shop style - update number in cart
+  // shop - update number in cart
   var totalItem = 1
-
   $(".btn-addtocart").on("click", function(){
-    // event.preventDefault();
     $(".cart-total-item").text(totalItem);
     $(".cart-total-item").css({"display":"inline-block"});
     return totalItem ++;
@@ -44,6 +40,7 @@ $(document).ready(function(){
 
 });
 
+// updates - email validation
 function ValidateEmail(mail){
   if (/^\w+([\.-]?\ w+)*@\w+([\.-]?\ w+)*(\.\w{2,3})+$/.test(mail)){
     return (true);

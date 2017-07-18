@@ -241,11 +241,10 @@ a{
 }
 .category{
   width: 100%;
-   position: relative;
+  position: relative;
 }
 .mens, .womens{
   padding-top: 50%;
- 
 }
 .trends, .glasses, .sale, .bags{
   padding-top: 100%;
