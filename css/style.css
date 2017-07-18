@@ -220,12 +220,13 @@ a{
 }
 .category{
   width: 100%;
-  position: relative;
+   position: relative;
 }
-.mens > div, .womens > div{
+.mens, .womens{
   padding-top: 50%;
+ 
 }
-.trends > div, .glasses > div, .sale > div, .bags > div{
+.trends, .glasses, .sale, .bags{
   padding-top: 100%;
 }
 .trends, .sale{
