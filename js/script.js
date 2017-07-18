@@ -32,6 +32,16 @@ $(document).ready(function(){
     } 
   });
 
+  // shop style - update number in cart
+  var totalItem = 1
+
+  $(".btn-addtocart").on("click", function(){
+    // event.preventDefault();
+    $(".cart-total-item").text(totalItem);
+    $(".cart-total-item").css({"display":"inline-block"});
+    return totalItem ++;
+  });
+
 });
 
 function ValidateEmail(mail){
