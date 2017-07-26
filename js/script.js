@@ -16,7 +16,7 @@ $(document).ready(function(){
   $(window).resize(function() {
     offset = $(".header-fixed").height();
   });
-  $(".main-nav a[href*=\\#]").on("click", function(event){  
+  $("#skip-to-content, .main-nav a[href*=\\#]").on("click", function(event){  
     event.preventDefault();
     $("html,body,article").animate({scrollTop:$(this.hash).offset().top-offset}, 500);
   });

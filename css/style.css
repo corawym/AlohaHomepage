@@ -14,7 +14,24 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+/*screen reader style*/
+.screen-reader{
+   clip: rect(1px, 1px, 1px, 1px);
+   position: absolute !important;
+   height: 1px;
+   width: 1px;
+   overflow: hidden;
+}
+.screen-reader:focus {
+   clip: auto !important;
+   display: block;
+   height: auto;
+   left: 5px;
+   top: 5px;
+   width: auto;
+   z-index: 100000; /* above all content */
+   outline: 0;
+}
 /*global - font style*/
 html{
   font-size: 14px;
@@ -43,7 +60,7 @@ h3{
   font-size: 1.5rem;
   font-weight: 400;
   font-style: normal;
-  color: #e2574c;
+  color: #db3a26;
 }
 .heavy{
   font-weight: 700;
@@ -61,9 +78,6 @@ a{
 .text-white-center{
   color: white;
   text-align: center;
-}
-.screen-reader{
-  display: none;
 }
 .content-center{
   display: -webkit-box;
@@ -130,7 +144,7 @@ a{
   position: relative;
 }
 .cart-total-item{
-  background-color: #e2574c;
+  background-color: #db3a26;
   width: 25px;
   height: 25px;
   -moz-border-radius: 50%;
@@ -159,7 +173,7 @@ a{
   margin: 17px 12px 0 12px;
 }
 .main-nav a{
-  color: #e2574c;
+  color: #db3a26;
 } 
 .main-nav a:hover{
   color: #b64036;
@@ -394,10 +408,9 @@ input[type=email]{
   margin-left: 20px;
   width: 70%;
   border: none;
-  outline: none;
 }
 input[type=submit]{
-  background-color: #e2574c;
+  background-color: #db3a26;
   font-weight: 500;
   border: 0;
   -moz-border-radius: 40px;
@@ -426,7 +439,7 @@ input[type=submit]:hover{
   color: white;
 }
 .site-footer a:hover{
-  color: #e2574c;
+  color: #db3a26;
 }
 .footer-contact p{
   font-family: 'PlayfairDisplay-web', sans-serif;

@@ -14,6 +14,7 @@
   </head>
 
   <body>
+    <a id="skip-to-content" class="screen-reader" href="#about">Skip to content</a>
     <!--Below is the site header.-->
     <header class="container header-fixed">
       <div class="container-maxwidth header-fixed-content">
@@ -31,7 +32,7 @@
           </div>
           <nav class="main-nav">
             <ul>
-              <li><a href="#about">about</a></li>
+              <li><a href="#about">about<span class="screen-reader">Aloha Apparel Co.</span></a></li>
               <li><a href="#shop">shop</a></li>
               <li><a href="#featured">featured</a></li>
               <li><a href="#updates">updates</a></li>
@@ -45,7 +46,9 @@
     <!--Below is the main content for the site.-->
     <article class="main-content">
       <!--Below is the section for top banner.-->
+      <h2 class="screen-reader">the main content of this site</h2>
       <section class="container">
+        <h2 class="screen-reader">Spring/Summer 2017 new collection's banner</h2>
         <div class="content-center top-banner">
           <div class="shadow text-white-center">
             <p class="banner-subtitle">new collection</p>
@@ -65,6 +68,7 @@
 
       <!--Below is the section for shop, product categories.-->
       <section class="container" id="shop">
+        <h2 class="screen-reader">Shop product categories</h2>
         <div class="content-center">
 
           <div class="shop-wide">
@@ -189,6 +193,7 @@
             upcoming sales, and get free style tips from our blog. 
             Unsubscribe at any time.</p>
             <form class="updates-form">
+              <label for="email-input" class="screen-reader">Enter your email</label>
               <input id="email-input" type="email" name="email-address" placeholder="Your Email" required>
               <input id="btn-sub" class="text-white-center" type="submit" name="subscribe" value="Subscribe">
             </form>
@@ -259,6 +264,7 @@
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--<script src="js/tota11y.min.js"></script>-->
     <script src='js/script.js'></script>
     
   </body>
