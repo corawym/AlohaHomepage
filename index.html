@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <a id="skip-to-content" class="screen-reader" href="#about">Skip to content</a>
+    <a id="skip-to-content" class="screen-reader" href="#main" tab-index:"-1">Skip to content</a>
     <!--Below is the site header.-->
     <header class="container header-fixed">
       <div class="container-maxwidth header-fixed-content">
@@ -25,17 +25,17 @@
             <img src="images/aloha-logo.svg" alt="logo of Aloha Apparel Co.">
           </div>
           <div class="header-cart">
-            <a href="#">
+            <a tabindex="2" href="#" >
               <img src="images/cart-icon.svg" alt="cart icon">
               <span class="cart-total-item">1</span>
             </a>
           </div>
           <nav class="main-nav">
             <ul>
-              <li><a href="#about">about<span class="screen-reader">Aloha Apparel Co.</span></a></li>
-              <li><a href="#shop">shop</a></li>
-              <li><a href="#featured">featured</a></li>
-              <li><a href="#updates">updates</a></li>
+              <li><a tabindex="1" href="#about">about<span class="screen-reader">Aloha Apparel Co.</span></a></li>
+              <li><a tabindex="1" href="#shop">shop</a></li>
+              <li><a tabindex="1" href="#featured">featured</a></li>
+              <li><a tabindex="1" href="#updates">updates</a></li>
             </ul>
           </nav>
 
@@ -44,7 +44,7 @@
     </header>
 
     <!--Below is the main content for the site.-->
-    <article class="main-content">
+    <main id="main">
       <!--Below is the section for top banner.-->
       <h2 class="screen-reader">the main content of this site</h2>
       <section class="container">
@@ -200,7 +200,7 @@
           </div>
         </div>
       </section>
-    </article>
+    </main>
 
     <!--Below is the footer for company contact information-->
     <footer class="container-footer">
@@ -219,7 +219,7 @@
             <p>Vancouver, BC, Canada</p>
           </div>    
         </div>
-
+      
         <div class="footer-social-media">
           <ul class="footer-social-media-content">
             <li>
