@@ -2,6 +2,8 @@
 # Aloha Apparel Co. (homepage)
 It is the homepage created for Aloha Apparel Co., a responsive website mainly using HTML and CSS and some JavaScript and jQuery. It shows the major contents of this company on this page, such as what Aloha Apparel Co. is, what it is selling, what it is currently promoting and how users can get its updates. It is also an e-commerce store.
 
+<img src="screenshots/AlohaHomepage-screenshot-desktop.png" alt="A screenshot of Aloha Apparel Co. desktop view"/>
+
 ### Structure 
 It divides into several sections:
 1. Header (has the logo, the main navigation bar, the cart icon which users know how many they put in cart)
@@ -12,7 +14,7 @@ It divides into several sections:
 6. An update and subscribe section
 7. Footer (has the contact and social media information)
 
-### Requirements
+### Technologies Used
 #### RWD
 - Use a mobile-first approach (min-width: 600px and min-width: 1240px)
 - Mobile view: 0-600px
