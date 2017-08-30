@@ -12,18 +12,6 @@
 
 @font-face {
   font-family: 'PlayfairDisplay-web';
-  src: url('../fonts/PlayfairDisplay-BoldItalic.eot');
-  src: url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
-       url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
-       url('../fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
-       url('../fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg'),
-       url('../fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype');
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'PlayfairDisplay-web';
   src: url('../fonts/PlayfairDisplay-Italic.eot');
   src: url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
        url('../fonts/PlayfairDisplay-Italic.woff') format('woff'),
@@ -60,18 +48,6 @@
 
 @font-face {
   font-family: 'Raleway-web';
-  src: url('../fonts/Raleway-LightItalic.eot');
-  src: url('../fonts/Raleway-LightItalic.woff2') format('woff2'),
-       url('../fonts/Raleway-LightItalic.woff') format('woff'),
-       url('../fonts/Raleway-LightItalic.ttf') format('truetype'),
-       url('../fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg'),
-       url('../fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Raleway-web';
   src: url('../fonts/Raleway-Medium.eot');
   src: url('../fonts/Raleway-Medium.woff2') format('woff2'),
        url('../fonts/Raleway-Medium.woff') format('woff'),
@@ -80,17 +56,5 @@
        url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype');
   font-weight: 500;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Raleway-web';
-  src: url('../fonts/Raleway-MediumItalic.eot');
-  src: url('../fonts/Raleway-MediumItalic.woff2') format('woff2'),
-       url('../fonts/Raleway-MediumItalic.woff') format('woff'),
-       url('../fonts/Raleway-MediumItalic.ttf') format('truetype'),
-       url('../fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg'),
-       url('../fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype');
-  font-weight: 500;
-  font-style: italic;
 }
 
