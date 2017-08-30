@@ -43,11 +43,11 @@ It divides into several sections:
 I learned all these languages within these two weeks. As a beginner, I had a hard time on how to apply the knowledge on this project. At the beginning, I draw many sketches and figured out how the html structure is. I use the header as an example, I need to know how display:flex, flex-basis are use, how many div it needs for the logo, navigation bar and cart separately. After that, I had a clear picture in mind of the site structure and helped me to add classes and organize elements more efficiency. For the responsive design, I listed out all the differences between mobile, tablet and desktop view. As well as how it changes between various views. At the end, I had the issue on cross browsers compatibility, especially on Firefox, the background images in the shop categories section are not showing. It is because of flexbox layout and padding properties, also the relationship of the parent and children. Therefore, I reorganized the div elements in that section and understood that the flexbox property cannot be the parent of the padding property (which is padding-top: 100%; in this case). After solving that, this page is completely worked in all major browsers.
 
 ## Screenshot
-(Desktop view)
+#### (Desktop view)
 <img src="screenshots/AlohaHomepage-screenshot-desktop-all.png" alt="A screenshot of Aloha Apparel Co. desktop view"/>
 
-(Tablet view)
+#### (Tablet view)
 <img src="screenshots/AlohaHomepage-screenshot-tablet-all.png" alt="A screenshot of Aloha Apparel Co. tablet view"/>
 
-(Mobile view)
+#### (Mobile view)
 <img src="screenshots/AlohaHomepage-screenshot-mobile-all.png" alt="A screenshot of Aloha Apparel Co. mobile view"/>
