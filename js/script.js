@@ -26,11 +26,10 @@ $(document).ready(function(){
     var emailInput = $("#email-input").val();
     if (ValidateEmail(emailInput)) {
       alert( "Thanks for subscribing!" );
-      // 
+      $("#email-input").val("");
       e.preventDefault();
     }else{
       alert( "Please enter a valid email." );
-      $("#email-input").val("");
       e.preventDefault();
     } 
   });
