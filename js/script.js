@@ -22,11 +22,16 @@ $(document).ready(function(){
   });
   
   // updates - email validation
-  $("#btn-sub").on("click", function(event) {
-    if (ValidateEmail($("#email-input").val())) {
-      event.preventDefault();
+  $("#btn-sub").click(function() {
+    var emailInput = $("#email-input").val();
+    if (ValidateEmail(emailInput)) {
       alert( "Thanks for subscribing!" );
+      // 
+      e.preventDefault();
+    }else{
+      alert( "Please enter a valid email." );
       $("#email-input").val("");
+      e.preventDefault();
     } 
   });
 
@@ -41,8 +46,8 @@ $(document).ready(function(){
 });
 
 // updates - email validation
-function ValidateEmail(mail){
-  if (/^\w+([\.-]?\ w+)*@\w+([\.-]?\ w+)*(\.\w{2,3})+$/.test(mail)){
+function ValidateEmail(email){
+  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
     return (true);
   }else{
     return (false);
